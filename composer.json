@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": "^7.2",
-        "binsoul/net-mqtt": "^0.8",
+        "php": "^7.2|^8.0",
+        "binsoul/net-mqtt": "dev-master",
         "evenement/evenement": "^3",
         "react/event-loop": "^1.1",
         "react/promise": "^2.7",
@@ -29,6 +29,12 @@
         "friendsofphp/php-cs-fixer": "^2",
         "phpstan/phpstan": "^0.12"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/einar-hansen/net-mqtt.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "BinSoul\\Net\\Mqtt\\Client\\React\\": "src"
